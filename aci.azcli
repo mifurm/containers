@@ -1,2 +1,7 @@
 rg=containersrg
+
 az container create --resource-group $rg --name mycontainer --image microsoft/aci-helloworld --cpu 1 --memory 1 --dns-name-label aci-demo --ports 80
+
+az container show --resource-group myResourceGroup --name aci-tutorial-app --query instanceView.state
+
+az container logs --resource-group myResourceGroup --name aci-tutorial-app
