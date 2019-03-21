@@ -1,0 +1,2 @@
+rg=containersrg
+az container create --resource-group $rg --name mycontainer --image microsoft/aci-helloworld --cpu 1 --memory 1 --dns-name-label aci-demo --ports 80
